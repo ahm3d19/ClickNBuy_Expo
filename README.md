@@ -1,17 +1,17 @@
 
-# 🏦 Stanbik Banking App  
+# 🏦 Click N Buy   
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
 ![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20Android-lightgrey?style=for-the-badge)
 
-A high-performance mobile banking app built with **React Native**, **AWS**, and **Redux**, optimized for all devices with a lean size (<100MB).
+A high-performance Ecommerce mobile app built with **React Native / Expo **, **AWS**, and **Redux**, optimized for all devices with a lean size (<100MB).
 
 ## 📲 Demo Video  
-[![Stanbik App Demo] 
+[![ClickNBuy App Demo] 
 
-https://github.com/user-attachments/assets/57255b69-7ed2-4ab3-814d-8f2d118e4f00
+
 
 
 *(Click the image above to watch the full demo)*  
