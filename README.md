@@ -13,7 +13,10 @@ A high-performance Ecommerce mobile app built with **React Native / Expo **, **A
 
 
 
-Uploading copy_E170C051-ACB9-490F-816A-8426FF45BFA5-2.mov…
+
+https://github.com/user-attachments/assets/14c6c38a-8add-44bf-a926-54a5069f4590
+
+
 
 
 
