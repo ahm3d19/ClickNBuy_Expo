@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🏦 Stanbik Banking App  
 
-## Get started
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20Android-lightgrey?style=for-the-badge)
 
-1. Install dependencies
+A high-performance mobile banking app built with **React Native**, **AWS**, and **Redux**, optimized for all devices with a lean size (<100MB).
 
-   ```bash
-   npm install
-   ```
+## 📲 Demo Video  
+[![Stanbik App Demo] 
 
-2. Start the app
+https://github.com/user-attachments/assets/57255b69-7ed2-4ab3-814d-8f2d118e4f00
 
-   ```bash
-    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+*(Click the image above to watch the full demo)*  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Key Features  
+| Feature          | Technology Used |  
+|------------------|----------------|  
+| **Biometric Login** | AWS Cognito + React Native Keychain |  
+| **Real-Time Transactions** | AWS AppSync + DynamoDB |  
+| **Offline Mode** | Redux Persist + SQLite |  
+| **Adaptive UI** | `useWindowDimensions()` + Responsive Grids |  
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠️ Quick Setup  
 
 ```bash
-npm run reset-project
+# 1. Clone repo
+git clone https://github.com/yourusername/stanbik-banking.git
+
+# 2. Install dependencies
+yarn install
+
+# 3. Start (choose one)
+yarn android   # For Android
+yarn ios       # For iOS (requires pod install)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+> 💡 **AWS Configuration Required**: Run `amplify init` and configure your backend services.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🧩 Project Structure  
+```
+src/
+├── auth/           # AWS Cognito integration
+├── components/     # Shared UI (responsive)
+├── features/       # Redux slices (RTK Query)
+├── hooks/          # Custom hooks (e.g. useResponsive)
+└── screens/        # Device-optimized screens
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📱 Multi-Screen Support  
+**How we handle different devices:**  
+```jsx
+// Example: Responsive Hook
+import { useWindowDimensions } from 'react-native';
 
-Join our community of developers creating universal apps.
+export const useDeviceType = () => {
+  const { width } = useWindowDimensions();
+  return width >= 768 ? 'TABLET' : 'PHONE';
+};
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+// Usage in components
+const { headerSize, padding } = deviceType === 'TABLET' 
+  ? { headerSize: 32, padding: 24 } 
+  : { headerSize: 24, padding: 16 };
+```
+
+---
+
+## 🏗️ Built With  
+- **Frontend**: React Native 0.72 + TypeScript  
+- **State**: Redux Toolkit (RTK Query)  
+- **Backend**: AWS Amplify (Cognito, DynamoDB, Lambda)  
+- **Navigation**: React Navigation 6.x  
+- **CI/CD**: GitHub Actions + AWS CodePipeline  
+
+---
+
+## 📜 License  
+MIT © [ahm3d19]  
+
+[![Star on GitHub](https://img.shields.io/github/stars/ahm3d19/stanbik-banking.svg?style=social)](https://github.com/ahm3d19/stanbik-banking/stargazers)  
+**Pro Tip:** Watch the [demo video](#-demo-video) to see the app in action!  
+```
