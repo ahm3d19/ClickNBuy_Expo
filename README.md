@@ -1,5 +1,5 @@
 
-# 🏦 Click N Buy   
+# 🏦 Click N Buy (Expo)
 
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
@@ -10,6 +10,9 @@ A high-performance Ecommerce mobile app built with **React Native / Expo **, **A
 
 ## 📲 Demo Video  
 [![ClickNBuy App Demo] 
+
+
+https://github.com/user-attachments/assets/74cd84ad-653d-45ec-b8ac-26aa26651477
 
 
 
@@ -32,14 +35,15 @@ A high-performance Ecommerce mobile app built with **React Native / Expo **, **A
 
 ```bash
 # 1. Clone repo
-git clone https://github.com/yourusername/stanbik-banking.git
+git clone https://github.com/yourusername/CLickNBuy_Expo.git
 
 # 2. Install dependencies
-yarn install
+npm install
 
 # 3. Start (choose one)
-yarn android   # For Android
-yarn ios       # For iOS (requires pod install)
+npx expo start
+Enter a   # For Android
+Enter i       # For iOS
 ```
 
 > 💡 **AWS Configuration Required**: Run `amplify init` and configure your backend services.
