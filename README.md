@@ -12,7 +12,10 @@ A high-performance Ecommerce mobile app built with **React Native / Expo **, **A
 [![ClickNBuy App Demo] 
 
 
-https://github.com/user-attachments/assets/74cd84ad-653d-45ec-b8ac-26aa26651477
+
+Uploading copy_E170C051-ACB9-490F-816A-8426FF45BFA5-2.mov…
+
+
 
 
 
